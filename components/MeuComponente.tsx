@@ -1,15 +1,22 @@
 import { View, Text, StyleSheet } from "react-native";
 
-export function MeuComponente() {
+interface Props {
+    text: String
+
+}
+
+export function MeuComponente({text}: Props) {
     return(
         <View>
-            <Text>Meu novo componente</Text>
+            <Text style={styles.myStyle}>
+                {text}
+            </Text>
         </View>
     )
 }
 
 const styles = StyleSheet.create({
     myStyle: {
-        color: 'green'
+        color: 'white'
     }
 })

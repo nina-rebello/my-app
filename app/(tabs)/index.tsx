@@ -1,18 +1,31 @@
 import { StyleSheet, View } from 'react-native';
+import { MeuComponente } from '@/components/MeuComponente';
 
 
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
       <View style={styles.container2}>
-        <View style={styles.flex1}></View>
-        <View style={styles.flex2}></View>
-        <View style={styles.flex3}></View>
+        <View style={styles.flex1} >
+          <MeuComponente text={'Um texto novo 1'}/>
+        </View>
+        <View style={styles.flex2}>
+          <MeuComponente text={'Um texto novo 2'}/>
+        </View>
+        <View style={styles.flex3}>
+          <MeuComponente text={'Um texto novo 3'}/>
+        </View>
       </View>
       <View style={styles.container3}>
-        <View style={styles.flex1}></View>
-        <View style={styles.flex2}></View>
-        <View style={styles.flex3}></View>
+        <View style={styles.flex1}>
+          <MeuComponente text={'Um texto novo 4'}/>
+        </View>
+        <View style={styles.flex2}>
+          <MeuComponente text={'Um texto novo 5'}/>
+        </View>
+        <View style={styles.flex3}>
+          <MeuComponente text={'Um texto novo 6'}/>
+        </View>
       </View>
     </View>
   );
