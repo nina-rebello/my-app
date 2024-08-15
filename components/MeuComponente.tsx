@@ -1,4 +1,4 @@
-import { View, Text } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 
 export function MeuComponente() {
     return(
@@ -7,3 +7,9 @@ export function MeuComponente() {
         </View>
     )
 }
+
+const styles = StyleSheet.create({
+    myStyle: {
+        color: 'green'
+    }
+})
